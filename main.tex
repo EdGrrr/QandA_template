@@ -1,0 +1,60 @@
+\documentclass[a4paper,11pt]{book}
+\usepackage{etex}
+\usepackage{comment}
+\excludecomment{comment}
+\usepackage[a4paper,top=3.0cm,bottom=2.5cm,left=2cm,right=2cm,marginparwidth=1.75cm]{geometry}
+\usepackage[english]{babel}
+\usepackage{amsmath,mathrsfs,amssymb}
+\usepackage{graphics}
+\usepackage{caption}
+\usepackage{pstricks}
+\usepackage{authblk}
+\usepackage{xspace}
+
+\renewcommand{\baselinestretch}{1.5}
+
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\rightmark}
+\rhead{Page \thepage}
+\renewcommand{\headrulewidth}{1pt}
+\usepackage{amsfonts,mathrsfs}
+\usepackage{makeidx}
+
+\renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
+\renewcommand{\thefigure}{\arabic{section}.\arabic{figure}}
+\renewcommand{\thetable}{\arabic{section}.\arabic{table}}
+\renewcommand{\thesection}{\arabic{section}}
+
+\newcommand{\lecture}{LECTURE NAME\xspace}
+\newcommand{\lecturer}{LECTURER NAME\xspace}
+\newcommand{\qemail}{EMAIL@imperial.ac.uk\xspace}
+
+
+\title{\lecture Social Q \& A}
+\author{\lecturer + \lecture classes}
+
+\begin{document}
+\maketitle
+
+\noindent Below, please find answers to the questions posed by previous students associated with each lecture. \\
+
+{\Large \bf \red
+
+\begin{center}
+Social Questions \& Answers \\
+\end{center}
+
+\vspace*{0.5cm}
+You can submit questions via the discussion board (anonymously) or via e-mail to \qemail with the subject ``\lecture''.
+
+\vspace*{0.5cm}
+\begin{center}
+{\bf \red PLEASE PLEASE PLEASE SUBMIT QUESTIONS!}
+\end{center}}
+
+\input{general.tex}
+\input{lecture1.tex}
+\end{document}
